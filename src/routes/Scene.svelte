@@ -6,7 +6,7 @@
 
 	interactivity();
 
-	const gltf = useGltf('/src/lib/assets/models/testObject.glb');
+	const gltf = useGltf('/testObject.glb');
 
 	const scale = new Spring(1);
 
