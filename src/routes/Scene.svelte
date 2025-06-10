@@ -1,12 +1,12 @@
 <script>
 	import { T, useTask, useLoader } from '@threlte/core';
-	import { interactivity } from '@threlte/extras';
+	import { interactivity, useGltf, useGltfAnimations } from '@threlte/extras';
 	import { Spring } from 'svelte/motion';
 	import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 	interactivity();
 
-	const gltf = useLoader(GLTFLoader).load('/src/lib/assets/models/testObject.glb');
+	const gltf = useGltf('/src/lib/assets/models/testObject.glb');
 
 	const scale = new Spring(1);
 
